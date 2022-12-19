@@ -37,9 +37,20 @@ body{
 p{
   color: var(--darkGrayish);
 }
+.heading-light{
+  background: transparent;
+}
+.heading-dark{
+  background: transparent;
+}
 
-h3{
-  color: rgb(36, 45, 82);
+@media (max-width:367px) {
+  .heading-light{
+    background: #FFF0EB;
+  }
+  .heading-dark{
+    background: #4c2e2d;
+  }
 }
 
 /*--------------------------------------- header -----------------------------------------*/
@@ -551,7 +562,7 @@ background: #fff;
 
 @media (max-width: 376px) {
   .difference__bullets > ul > li > h3 {
-    background: #FFF0EB;
+    
     text-align: left;
     padding: 0.8125rem 0;
     border-top-left-radius: 50px;

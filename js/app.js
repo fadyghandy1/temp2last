@@ -16,6 +16,12 @@ function Ck() {
 		});
 
 
+		Array.from(document.getElementsByClassName("diff-heading")).forEach(element => {
+			element.classList.remove("heading-light");
+			element.classList.add("heading-dark");
+		});
+
+
 
 		Array.from(document.getElementsByClassName("card")).forEach(element => {
 			element.classList.remove("card-light");
@@ -27,6 +33,7 @@ function Ck() {
 			element.classList.add("line-dark");
 			
 		});
+	
 
 	} else {
 		document.body.style.backgroundColor = "#fff";
@@ -45,6 +52,12 @@ function Ck() {
 		Array.from(document.getElementsByClassName("line")).forEach(element => {
 			element.classList.add("line-light");
 			element.classList.remove("line-dark");
+			
+		});
+
+		Array.from(document.getElementsByClassName("diff-heading")).forEach(element => {
+			element.classList.add("heading-light");
+			element.classList.remove("heading-dark");
 			
 		});
 	}
